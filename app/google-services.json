@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1078649259826",
+    "firebase_url": "https://bungakuapp.firebaseio.com",
+    "project_id": "bungakuapp",
+    "storage_bucket": "bungakuapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078649259826:android:f8acb5ee6a6c8c94f6392b",
+        "android_client_info": {
+          "package_name": "com.mantab.bungakuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078649259826-cg6p4bl32ql794amersskq6kmhvf2eup.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mantab.bungakuapp",
+            "certificate_hash": "ae209b9996517a8a7fdc9d34f7430b52d89c12c8"
+          }
+        },
+        {
+          "client_id": "1078649259826-tjqvqhq8n0v9f5lehbf9d7foesj8ujbi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYHgCPPqBxpoMFIQfuVmvasBA4fW-_h5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078649259826-tjqvqhq8n0v9f5lehbf9d7foesj8ujbi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

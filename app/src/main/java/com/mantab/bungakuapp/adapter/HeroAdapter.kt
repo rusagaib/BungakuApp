@@ -29,7 +29,7 @@ class HeroAdapter(val heroes: MutableList<dataIco>,
     override fun onBindViewHolder(holder: HeroHolder, position: Int) {
         val pos = heroes.get(position)
         holder.bindHero(pos, listener)
-//        val pos = heroes.get(position)
+
 
     }
 }

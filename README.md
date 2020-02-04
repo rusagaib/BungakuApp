@@ -1,6 +1,6 @@
 # BungakuApp #
 ini adalah boilerplate aplikasi CRUD yang cocok digunakan oleh admin.
-Menggunakan:
+# Menggunakan: #
      * Kotlin
      * Firebase
      * Anko

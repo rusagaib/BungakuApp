@@ -11,18 +11,20 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
 import com.mantab.bungakuapp.adapter.AdapterEdit
 import com.mantab.bungakuapp.adapter.isiPaket
-import kotlinx.android.synthetic.main.activity_show.*
+import com.mantab.bungakuapp.databinding.ActivityShowBinding
 
 class show : AppCompatActivity() {
 
     lateinit var ref : DatabaseReference
     lateinit var list : MutableList<isiPaket>
     lateinit var listView: ListView
+    private lateinit var binding: ActivityShowBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS );
-        setContentView(R.layout.activity_show)
+        binding = ActivityShowBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         ref = FirebaseDatabase.getInstance().getReference("paket")
         list = mutableListOf()
@@ -32,7 +34,7 @@ class show : AppCompatActivity() {
         loading.setMessage("Tunggu Sebentar...")
         loading.show()
 
-        btn_insert.setOnClickListener{
+        binding.btnInsert.setOnClickListener{
             intent = Intent(this, FormTambahPaket::class.java)
             startActivity(intent)
         }

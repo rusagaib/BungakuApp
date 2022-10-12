@@ -8,20 +8,23 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_login.*
+import com.mantab.bungakuapp.databinding.ActivityLoginBinding
 
 class Login : AppCompatActivity() {
 
+    private lateinit var binding: ActivityLoginBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btn_login.setOnClickListener {
+        binding.btnLogin.setOnClickListener {
             val loading = ProgressDialog(this)
             loading.setMessage("Tunggu Sebentar...")
             loading.show()
-            val email = ed_user.text.toString()
-            val pass = ed_pass.text.toString()
+            val email = binding.edUser.text.toString()
+            val pass = binding.edPass.text.toString()
 
             if (email.isEmpty() || pass.isEmpty()) {
                 Toast.makeText(this, "Tolong Isi Email dan Password", Toast.LENGTH_SHORT).show()
